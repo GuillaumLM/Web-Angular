@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'ex3',
@@ -8,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class Exercice3Component {
 
   @Input() id;
+  @Output() notify = new EventEmitter();
 
   youtubers = [
   { id: 1, name: 'HugoDécrypte', followers: 445000, description: 'YouTube + l\'actualité expliquée = HugoDécrypte' },
@@ -25,10 +27,13 @@ constructor(){
 
 }
 
+
+
 like(youtuber) {
-    console.log( youtuber.name + ' Liked !');
-    youtuber.followers++;
-    
+    console.log( youtuber.name + ' Liked ! fils ');
+       
   }
+
+  
 
 }

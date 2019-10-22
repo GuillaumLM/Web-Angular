@@ -12,6 +12,11 @@ export class AppComponent  {
   {
     return s + "est le meilleur youtuber de france";
   }
+
+  onNotify(){
+    console.log(' Liked ! parent');
+      
+  }
 }
 
 

@@ -2,13 +2,16 @@
   <div class="card-body">
 
     <div *ngFor="let youtuber of youtubers">
+
     <div *ngIf="youtuber.followers >= 100000">
+
     <h5 class="card-title">{{youtuber.name}}</h5>  
     <button (click)="like(youtuber)">Like</button>
- 
-
     <p class="card-text">{{youtuber.followers}}</p>
     <p class="card-text">{{youtuber.description}}</p>
+
+    <button (click)="notify.emit()">Notify Me </button>
+
     <p> </p>
     </div>
     </div>
