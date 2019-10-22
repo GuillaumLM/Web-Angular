@@ -25,5 +25,10 @@ constructor(){
 
 }
 
+like(youtuber) {
+    console.log( youtuber.name + ' Liked !');
+    youtuber.followers++;
+    
+  }
 
 }
