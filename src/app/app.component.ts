@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  
   name = 'zenzazion';
   
   GetName (s)
@@ -13,8 +14,8 @@ export class AppComponent  {
     return s + "est le meilleur youtuber de france";
   }
 
-  onNotify(){
-    console.log(' Liked ! parent');
+  onNotify(nom){
+    console.log(nom+' Liked ! parent');
       
   }
 }
